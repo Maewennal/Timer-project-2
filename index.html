@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pomodoro Cat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-anim">🐱</div>
+
+  <div class="timer-container">
+    <h1>Timer</h1>
+    <div id="timer">25:00</div>
+    <div class="choix-duree">
+      <label for="duree">Time (minutes) :</label>
+      <input type="number" id="duree" value="25" min="1" max="120">
+    </div>
+    <div class="controls">
+      <button id="startPauseBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+    <p id="message-final" style="display:none;"></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
